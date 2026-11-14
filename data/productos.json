@@ -1,0 +1,14 @@
+[
+  { "id": 1, "nombre": "Teclado mecánico", "categoria": "perifericos", "precio": 45000, "stock": 10, "imagen": "assets/img/teclado-mecanico.png" },
+  { "id": 2, "nombre": "Mouse gamer", "categoria": "perifericos", "precio": 25000, "stock": 15, "imagen": "assets/img/mouse-gamer.png" },
+  { "id": 3, "nombre": "Webcam HD", "categoria": "perifericos", "precio": 30000, "stock": 8, "imagen": "assets/img/web-cam.png" },
+  { "id": 4, "nombre": "Auriculares", "categoria": "audio", "precio": 40000, "stock": 5, "imagen": "assets/img/auriculares.png" },
+  { "id": 5, "nombre": "Parlante bluetooth", "categoria": "audio", "precio": 55000, "stock": 0, "imagen": "assets/img/parlante-blt.png" },
+  { "id": 6, "nombre": "Micrófono USB", "categoria": "audio", "precio": 45000, "stock": 6, "imagen": "assets/img/microfono.png" },
+  { "id": 7, "nombre": "Monitor 24\"", "categoria": "pantallas", "precio": 250000, "stock": 3, "imagen": "assets/img/monitor-1.png" },
+  { "id": 8, "nombre": "Monitor 27\"", "categoria": "pantallas", "precio": 300000, "stock": 2, "imagen": "assets/img/monitor-2.png" },
+  { "id": 9, "nombre": "Mouse pad XL", "categoria": "perifericos", "precio": 20000, "stock": 20, "imagen": "assets/img/mouse-pad.png" },
+  { "id": 10, "nombre": "Silla gamer", "categoria": "muebles", "precio": 200000, "stock": 4, "imagen": "assets/img/silla-gamer.png" },
+  { "id": 11, "nombre": "Gabinete ATX", "categoria": "componentes", "precio": 180000, "stock": 6, "imagen": "assets/img/gabinete.png" },
+  { "id": 12, "nombre": "Control PS5", "categoria": "consolas", "precio": 80000, "stock": 1, "imagen": "assets/img/control-ps5.png" }
+]
