@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Tech</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+  <script src="js/datos.js" defer></script>
+  <script src="js/interfaz.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="encabezado">
+    <img src="assets/img/logo.png" alt="Logo de Tienda Tech" class="logo">
+    <h1>Tienda Tech</h1>
+    <p class="contador">Carrito: <strong id="contador-carrito">0</strong></p>
+  </header>
+
+  <div id="aviso" class="aviso"></div>
+
+  <main class="contenido">
+    <section class="caja">
+      <h2>Productos</h2>
+      <p class="nota">Los precios no incluyen IVA.</p>
+      <div class="filtros">
+        <input type="text" id="buscador" placeholder="Buscar producto...">
+        <select id="filtro-categoria"></select>
+        <select id="orden-precio">
+          <option value="">Ordenar por precio</option>
+          <option value="menor">Menor a mayor</option>
+          <option value="mayor">Mayor a menor</option>
+        </select>
+        <button id="btn-recargar">Recargar</button>
+      </div>
+      <div id="estado"></div>
+      <div id="contenedor-productos" class="grilla"></div>
+    </section>
+
+    <aside>
+      <section class="caja">
+        <h2>Tu carrito</h2>
+        <div id="contenedor-carrito"></div>
+        <div class="cupon">
+          <input type="text" id="cupon" placeholder="Cupón de descuento">
+          <button id="btn-cupon">Aplicar</button>
+        </div>
+        <div id="resumen"></div>
+        <button id="btn-vaciar" class="btn-secundario">Vaciar carrito</button>
+      </section>
+
+      <section class="caja">
+        <h2>Datos de la compra</h2>
+        <form id="form-compra">
+          <label for="comprador-nombre">Nombre y apellido</label>
+          <input type="text" id="comprador-nombre" placeholder="Nombre y apellido">
+          <label for="comprador-email">Email</label>
+          <input type="text" id="comprador-email" placeholder="correo@ejemplo.com">
+          <label for="medio-de-pago">Medio de pago</label>
+          <select id="medio-de-pago">
+            <option value="Tarjeta">Tarjeta</option>
+            <option value="Transferencia">Transferencia</option>
+            <option value="Efectivo">Efectivo</option>
+          </select>
+          <button type="submit" id="btn-finalizar">Finalizar compra</button>
+        </form>
+      </section>
+
+      <section class="caja">
+        <h2>Último pedido</h2>
+        <div id="contenedor-pedido"></div>
+      </section>
+    </aside>
+  </main>
+
+  <footer class="pie">
+    <button id="btn-reiniciar" class="btn-secundario">Restablecer tienda</button>
+  </footer>
+</body>
+</html>
