@@ -1,14 +1,12 @@
 # Tienda Tech
 
-Entrega final - Aplicación web interactiva
-
-Link al proyecto publicado: https://TU-USUARIO.github.io/TU-REPOSITORIO/
+Entrega final - Pagina Web de ventas
 
 ## De qué se trata
 Armé una tienda online de tecnología. Se pueden ver los productos, buscarlos, filtrarlos por categoría y ordenarlos por precio. Después se agregan al carrito, se cambian las cantidades, se aplica un cupón de descuento y se finaliza la compra completando unos datos. Al terminar, la tienda muestra el último pedido y descuenta el stock de lo que se compró.
 
 ## Cómo probarla
-Los productos están en un archivo `.json` y se leen con `fetch`, así que no alcanza con abrir el `index.html` con doble clic: el navegador lo bloquea y aparece un mensaje de error. Hay que abrirlo con un servidor, por ejemplo con la extensión Live Server de VS Code, o entrando al link de GitHub Pages de arriba.
+Los productos están en un archivo `.json` y se leen con `fetch`, así que no alcanza con abrir el `index.html` con doble clic: el navegador lo bloquea y aparece un mensaje de error. Hay que abrirlo con un servidor, por ejemplo con la extensión Live Server de VSC.
 
 ## Cómo se usa
 1. Entrás y ves los productos. Si querés, buscás por nombre, elegís una categoría o los ordenás por precio.
@@ -35,13 +33,13 @@ Si algo sale mal (por ejemplo, un producto sin stock o un email incorrecto) la p
 - `setTimeout` para el aviso del cupón
 
 ## Imágenes
-En `productos.json` la propiedad `imagen` puede ir sin extensión (por ejemplo `assets/img/mouse-gamer`) y la página prueba `png`, `jpg`, `jpeg` y `webp`. Si un producto no tiene imagen o no se encuentra, muestra una imagen por defecto.
+En `productos.json` la propiedad `imagen` puede ir sin extensión (por ejemplo `assets/img/mouse-gamer`) y la página prueba `png`, `jpg`, `jpeg` y `webp`.
 
 ## Carpetas
 ```
 index.html
 README.md
-assets/img/    logo y fotos de los productos
+assets/img/    fotos de los productos
 css/style.css
 data/productos.json
 js/datos.js     datos, storage y cálculos
